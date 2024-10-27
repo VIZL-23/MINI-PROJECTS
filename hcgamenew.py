@@ -1,6 +1,43 @@
 import random
-print('''Welcome to game of handcricket, presented in a computer....you will be play
-against a computer with same set of rules....''')
+print("""
+Welcome to Hand Cricket!
+
+Hand Cricket is a fun, casual game where you play 'cricket' with numbers. 
+In this computer version, you'll play against the computer, aiming to score more runs than it to win!
+
+Basic Rules of Hand Cricket:
+
+1. Objective:
+   The goal is to score more runs than the opponent. 
+   There are two roles in the game: batting and bowling.
+      - When you're batting, you score runs.
+      - When you're bowling, you try to prevent the computer from scoring.
+
+2. The Toss:
+   The game starts with a toss to decide who bats first.
+      - You'll choose "odd" or "even" and select a number between 0 and 10.
+      - The computer will also select a number.
+      - If the sum of the two numbers is even, the player who chose "even" wins the toss.
+      - If the sum is odd, the player who chose "odd" wins the toss.
+      - The toss winner gets to choose whether to bat or bowl first.
+
+3. Batting:
+      - When batting, you'll input a number (run) between 0 and 10.
+      - The computer will simultaneously choose a "ball" number between 0 and 10.
+      - If the numbers don't match, your chosen number is added to your score.
+      - If the numbers match, you're "out," and your final score is set.
+      
+4. Bowling:
+      - When bowling, the computer will select a number (run) between 0 and 10.
+      - You'll select a "ball" number between 0 and 10.
+      - If the numbers don't match, the computer's number is added to its score.
+      - If the numbers match, the computer is "out," and its score is set.
+
+5. Winning:
+   The player with the higher score at the end wins the match!
+   
+Let's get started and have fun!
+""")
 
 def game():
 
