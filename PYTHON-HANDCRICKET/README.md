@@ -1,1 +1,2 @@
-This repo is for my basic python projects 
+This is a replica of popular indie handcricket game
+Refined using AI
