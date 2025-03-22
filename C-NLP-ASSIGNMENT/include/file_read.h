@@ -1,4 +1,4 @@
-#ifndef FILE_READER_H
-#define FILE_READER_H
+#ifndef FILE_READ_H
+#define FILE_READ_H
 char** read(const char* filename,int* num_sentences);
 #endif 
