@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "/.../include/file_read.h"
-#include "/.../include/unigram.h"
+#include "/.../include/file_read.h"        //change accordingly
+#include "/.../include/unigram.h"          //change accordingly
 
 int main(){
     int num_sentences;
