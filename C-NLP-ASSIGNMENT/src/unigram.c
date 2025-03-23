@@ -1,6 +1,6 @@
 
 #include <stdio.h>
-#include "/.../include/unigram.h"
+#include "/.../include/unigram.h"    //change accordingly
 #include <string.h>
 #include <stdlib.h>
 #include <ctype.h>
