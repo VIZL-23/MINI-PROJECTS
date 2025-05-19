@@ -17,9 +17,16 @@ public:
 };
 
 class SavingsAccount: public Account{
-private:
-  int time;
 public:
+  SavingsAccount(int accno, string name, int bal){
+    this->accno = accno;
+    this->name = name;
+    this->bal = bal;
+  }
+
+  int time;
+  static int rate;
+
   void deposit(int amount)override{
     bal+=amount;
     cout<<"DEPOSITED AMOUNT: "<<amount<<endl;
@@ -38,21 +45,38 @@ public:
     else{
       cout<<"LOW BALANCE, PLEASE DEPOSIT SOME AMOUNT"<<endl;
     }
-
-
-
-    
-
-
   }
   void display()override{
-    cout<<"TOTAL AMOUNT IN YOUR SAVINGS ACCOUNT: "<<bal<<endl;
+    cout<<"TOTAL AMOUNT IN YOUR SAVINGS ACCOUNT: "<<bal+bal*time*rate*0.01<<endl;
   }
 };
 
+int SavingsAccount::rate=5;
+
 class CurrentAccount: public Account{
 public:
+  CurrentAccount(int accno, string name, int bal){
+    this->accno = accno;
+    this->name = name;
+    this->bal = bal;
+  }
+  void deposit(int amount)override{
+      bal+=amount;
+      cout<<"DEPOSITED AMOUNT: "<<amount<<endl;
+    }
 
+    void withdraw(int amount)override{
+      if(bal-amount>0){
+          bal-=amount;  
+          cout<<"WITHDRAWED AMOUNT: "<<amount;
+        }
+      else{
+        cout<<"LOW BALANCE, PLEASE DEPOSIT SOME AMOUNT"<<endl;
+      }
+    }
+    void display()override{
+      cout<<"TOTAL AMOUNT IN YOUR CURRENT ACCOUNT: "<<bal;
+    }
 
 };
 
