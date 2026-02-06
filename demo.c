@@ -1,5 +1,7 @@
+#include <stdio.h>
 
-
+int main(){
+/*
 TCP SERVER
 #include <stdio.h>
 #include <stdlib.h>
@@ -774,3 +776,6 @@ int main() {
 18.ifplugstatus
 19.iftop
 20.tcpdum
+
+*/
+}
